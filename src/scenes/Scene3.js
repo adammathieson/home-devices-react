@@ -76,11 +76,11 @@ const Scene3 = () => {
     tl.to("#guy-front-static", {display: "block", x:-30, duration: 0}, "-=.5")
     tl.to("#guy-front-static", { x: -50, y: 100, scale: 0.8, duration: 2.2})
     tl.to("#scene-3", 1, {opacity: 0})
-    
+
     }, [])
 
     return (
-        <svg
+    <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         id="scene-3"
@@ -88,7 +88,7 @@ const Scene3 = () => {
         height="596"
         fill="none"
         viewBox="0 0 838 596"
-        >
+    >
         <g id="scene-3-int-door" clipPath="url(#clip0)">
             <path fill="#fff" d="M0 0h838v596H0z"></path>
             <g id="inside-door">

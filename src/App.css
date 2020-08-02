@@ -1,0 +1,52 @@
+
+body {
+    background: #353434;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+svg {
+    height: 100%;
+    width: 100%;
+} 
+
+
+#scene-1,
+#scene-2,
+#scene-3,
+#scene-4
+{
+    opacity: 0;
+}
+
+#box-open,
+#wyze-outdoor-cam,
+#base,
+#wyze-logo,
+#guy3,
+#guy4,
+#chair-front,
+#door-open3,
+#package-table,
+#Unlocked,
+#Rectangle-354,
+#guy-back,
+#guy-back3,
+#resume-name,
+#loader,
+#complete,
+#analyzing-resume,
+#Success,
+#adam-mathieson,
+#email,
+#phone,
+#msg,
+#cam-feed
+
+{
+    display: none;
+}

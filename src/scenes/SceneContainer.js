@@ -1,12 +1,14 @@
 import React from 'react'
-import SceneOne from './scene1/SceneOne'
+import Scene1 from './Scene1'
+import Scene2 from './Scene2'
+
 
 const SceneContainer = () => {
     return (
         <div className='container'>
 
-            <SceneOne />
-            {/* <Scene2 /> */}
+            {/* <Scene1 /> */}
+            <Scene2 />
             {/* <Scene3 /> */}
             {/* <Scene4 /> */}
             {/* <Scene5 /> */}

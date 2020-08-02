@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react'
-// import scene1 from './scene1.svg'
 
-// const { gsap } = require("gsap/dist/gsap");
 import { gsap } from 'gsap'
 
 
-const SceneOne = () => {
+const Scene1 = () => {
 
     useEffect(() => {
         const rLeg = gsap.fromTo("#leg-right" , .5, {rotate: 6}, {rotate: -6, ease:'none', repeat:-1, yoyo: true});
@@ -3783,7 +3781,7 @@ const SceneOne = () => {
     )
 }
 
-export default SceneOne
+export default Scene1
 
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import SceneContainer from './components/SceneContainer.js'
+import SceneContainer from './scenes/SceneContainer'
 
 function App() {
   return (

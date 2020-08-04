@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 
-import SceneContainer from './scenes/SceneContainer'
+import SelectedScene from './scenes/SelectedScene'
 
 function App() {
   return (
     <>
-      <SceneContainer />
+      <SelectedScene />
     </>
   );
 }

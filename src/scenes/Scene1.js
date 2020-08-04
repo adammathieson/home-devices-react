@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-
+// import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
 
 
@@ -26,6 +26,7 @@ const Scene1 = () => {
             lLegBack.pause()
             rLegBack.pause()
         }
+
         const tl = gsap.timeline()
             tl.to("#scene-1", 1, {opacity: 1})
 
@@ -83,7 +84,7 @@ const Scene1 = () => {
             // tl.to("#card", .3, {opacity: 0, delay: 4})
 
             tl.to("#scene-1", 2, {attr:{viewBox: "250 250 400 200"}})
-            tl.to("#scene-1", .5, {opacity: 0, onComplete: null})
+            tl.to("#scene-1", .5, {opacity: 0})
     }, [])
 
     return (

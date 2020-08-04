@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
+import {useStore} from '../Store'
 
 import { gsap } from 'gsap'
 
 const Scene2 = () => {
-
+    const next = useStore(state => state.nextScene)
     useEffect(() => {
         const rArm = gsap.fromTo("#arm-int-right", .18, {rotate: 0, x:-2}, {rotate: -3, x:3, ease:"none", repeat:-1, yoyo: true, transformOrigin: "100% 0%"});
             rArm.progress(0.5).pause();
@@ -80,9 +81,9 @@ const Scene2 = () => {
             tl.to("#locked", {display: "none"})
             tl.to("#Locked", {display: "none"})
             tl.to("#Unlocked", {display: "block"})
-            tl.to("#scene-2", .5, {opacity: 0})
+            tl.to("#scene-2", .5, {opacity: 0, onComplete: next})
 
-    })
+    }, [next])
 
     return (
         <svg

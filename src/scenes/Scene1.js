@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react'
-// import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
+import {useStore} from '../Store'
+
+
 
 
 const Scene1 = () => {
 
+    const next = useStore(state => state.nextScene)
     useEffect(() => {
         const rLeg = gsap.fromTo("#leg-right" , .5, {rotate: 6}, {rotate: -6, ease:'none', repeat:-1, yoyo: true});
         rLeg.progress(0.5).pause();
@@ -84,8 +87,8 @@ const Scene1 = () => {
             // tl.to("#card", .3, {opacity: 0, delay: 4})
 
             tl.to("#scene-1", 2, {attr:{viewBox: "250 250 400 200"}})
-            tl.to("#scene-1", .5, {opacity: 0})
-    }, [])
+            tl.to("#scene-1", .5, {opacity: 0, onComplete: next})
+    }, [next])
 
     return (
         <svg

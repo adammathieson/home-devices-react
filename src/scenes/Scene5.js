@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
+import {useStore} from '../Store'
 import { gsap } from 'gsap'
 
 const Scene5 = () => {
-
+    const next = useStore(state => state.nextScene)
     useEffect(() => {
         const tl = gsap.timeline()
             tl.set("#package-table", {display: "block"})
@@ -49,7 +50,7 @@ const Scene5 = () => {
 
             // tl.to("#replay", .2, {display: "block"})
             //     .fromTo("#replay", .4, {opacity: 0, y:10, rotate: -10}, {opacity: 1, y:0, rotate: 0})
-    })
+    }, [next])
 
     return (
     <svg

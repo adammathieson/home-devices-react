@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
+import {useStore} from '../Store'
 import { gsap } from 'gsap'
 
 const Scene3 = () => {
-
+    const next = useStore(state => state.nextScene)
     useEffect(() => {
         const rLegBack = gsap.fromTo("#leg-right-back-3", .5, {rotate: 6}, {rotate: -6, ease:"none", repeat:-1, yoyo: true});
             rLegBack.progress(0.5).pause();
@@ -75,9 +76,9 @@ const Scene3 = () => {
     tl.to("#door3", {display: "block"})
     tl.to("#guy-front-static", {display: "block", x:-30, duration: 0}, "-=.5")
     tl.to("#guy-front-static", { x: -50, y: 100, scale: 0.8, duration: 2.2})
-    tl.to("#scene-3", 1, {opacity: 0})
+    tl.to("#scene-3", 1, {opacity: 0, onComplete: next})
 
-    }, [])
+    }, [next])
 
     return (
     <svg

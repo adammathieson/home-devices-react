@@ -1,6 +1,5 @@
 import React from 'react'
 import { useStore } from '../Store'
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Scene1 from './Scene1'
 import Scene2 from './Scene2'
 import Scene3 from './Scene3'
@@ -11,7 +10,6 @@ const sceneArr = [<Scene1/>, <Scene2/>, <Scene3/>, <Scene4/>, <Scene5/>]
 
 const SceneSelector = () => {
     const scene = useStore(state => state.scene)
-    console.log(scene)
     
     return sceneArr[scene]
 

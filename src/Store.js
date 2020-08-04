@@ -1,9 +1,8 @@
 import create from 'zustand'
 
-const maxScene = 5
+const maxScene = 4
 export const [useStore] = create(set => ({
-    scene: 1,
-    max: 5,
+    scene: 0,
     nextScene: () => set(state => ({ 
         scene: state.scene < maxScene ? state.scene +1 : 1
     }))

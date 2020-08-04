@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
+import {useStore} from '../Store'
 import { gsap } from 'gsap'
 
 const Scene4 = () => {
-
+    const next = useStore(state => state.nextScene)
     useEffect(() => {
         const tl = gsap.timeline()
             tl.set("#guy4, #chair-front", {display: "block"})
@@ -16,8 +17,8 @@ const Scene4 = () => {
             tl.to("#leg-left-3", .2, {rotate: 20, transformOrigin: "100% 0%"}, "-=.2")
             tl.to("#body-int-upper", .2, {rotate: 15, transformOrigin: "50% 100%"}, "-=.2")
             tl.to("#guy4, #chair-front", 3, {x: -1000}, "-=.15")
-            tl.to("#scene-4", .5, {opacity: 0}, "-=2" )
-    }, [])
+            tl.to("#scene-4", .5, {opacity: 0, onComplete: next}, "-=2" )
+    }, [next])
 
     return (
         <svg

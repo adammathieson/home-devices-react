@@ -1,4 +1,5 @@
 import React from 'react'
+import { Route } from 'react-router-dom'
 import Scene1 from './Scene1'
 import Scene2 from './Scene2'
 import Scene3 from './Scene3'
@@ -14,6 +15,7 @@ const SceneContainer = () => {
             {/* <Scene2 /> */}
             {/* <Scene3 /> */}
             {/* <Scene4 /> */}
+            <Route />
             <Scene5 />
         </div>
     )

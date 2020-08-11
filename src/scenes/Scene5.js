@@ -22,17 +22,24 @@ const Scene5 = () => {
             tl.to("#box-open", {display: "block"},"-=2")
 
             // zoom in on product
-            tl.to("#scene-5", {attr:{viewBox: "50 230 200 120"}, duration: 1}, "-=1")
+            tl.to("#scene-5", {attr:{viewBox: "80 230 200 120"}, duration: 1}, "-=1")
 
-            // tl.to("#scene-5", {attr:{viewBox: "0 0 838 596"}, duration: 1})
+            tl.fromTo("#product-display", .32, {display: "none", opacity: 0}, {display: "block", opacity: 1})
+            tl.fromTo("#product-title", .8, {display:"none", opacity: 0}, {display: "block", opacity: 1})
+            tl.fromTo("#product-info", .8, {display:"none", opacity: 0}, {display: "block", opacity: 1}, "-=0.3")
+            tl.fromTo("#product-price", 1.6, {display:"none", opacity: 0}, {display: "block", opacity: 1})
+            tl.to("#product-card", 0.4, {opacity: 0, delay:2})
+            tl.to("#product-display", 0.5, {opacity: 0})
 
-            // tl.to("#guy4", .2, {y: -100, rotate: 10})
-            // tl.to("#leg-left-3", .2, {rotate: 30}, "-=.1")
-            // tl.to("#leg-right-4", .2, {rotate: 140, transformOrigin: "10% 50%"}, "-=.3")
-            // tl.to("#arm-int-left", .2, {rotate: -50}, "-=.2")
-            // tl.to("#arm-int-right", .2, {rotate: -120}, "-=.2")
+            tl.to("#scene-5", {attr:{viewBox: "0 0 838 596"}, duration: 1})
 
-            // tl.to("#wyze-logo", {display: "block"})
+            tl.to("#guy4", .2, {y: -100, rotate: 10})
+            tl.to("#leg-left-3", .2, {rotate: 30}, "-=.1")
+            tl.to("#leg-right-4", .2, {rotate: 140, transformOrigin: "10% 50%"}, "-=.3")
+            tl.to("#arm-int-left", .2, {rotate: -50}, "-=.2")
+            tl.to("#arm-int-right", .2, {rotate: -120}, "-=.2")
+
+            tl.to("#wyze-logo", {display: "block"})
 
     }, [next])
 

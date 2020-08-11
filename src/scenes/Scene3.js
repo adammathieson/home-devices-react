@@ -75,7 +75,7 @@ const Scene3 = () => {
     tl.to("#door-3, #lock, #door-handle", {display: "block"})
     tl.to("#guy-front-static", {display: "block", x:-30, duration: 0}, "-=.5")
     tl.to("#guy-front-static", { x: -50, y: 100, scale: 0.8, duration: 2.2})
-    // tl.to("#scene-3", 1, {opacity: 0, onComplete: next})
+    tl.to("#scene-3", 1, {opacity: 0, onComplete: next})
 
     }, [next])
 

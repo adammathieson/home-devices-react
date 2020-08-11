@@ -69,7 +69,7 @@ const Scene2 = () => {
             tl.to("#locked", {display: "none"})
             tl.to("#Locked", {display: "none"})
             tl.to("#Unlocked", {display: "block"})
-            tl.to("#scene-2", .5, {opacity: 0, onComplete: null})
+            tl.to("#scene-2", .5, {opacity: 0, onComplete: next})
 
     }, [next])
 

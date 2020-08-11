@@ -62,7 +62,7 @@ const Scene5 = () => {
                 fill="none"
                 viewBox="0 0 838 596"
             >
-            <g id="scene-5-the-box" clip-path="url(#clip0)">
+            <g id="scene-5-the-box" clipPath="url(#clip0)">
                 <path fill="#fff" d="M0 0h838v596H0z"></path>
                 <g id="inside-door">
                 <g id="outside-bg">

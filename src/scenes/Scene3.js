@@ -32,10 +32,10 @@ const Scene3 = () => {
 
 
         const tl = gsap.timeline()
-    tl.to("#scene-3", 1, {opacity: 1})  
+    tl.to("#scene-3", 2, {opacity: 1})  
 
     // zoom in on product
-    tl.to("#scene-3", {attr:{viewBox: "505 302 70 32"}, duration: 1})
+    tl.to("#scene-3", {attr:{viewBox: "505 295 70 45"}, duration: 1})
 
     tl.fromTo("#product-display", .32, {display: "none", opacity: 0}, {display: "block", opacity: 1})
     tl.fromTo("#product-title", .8, {display:"none", opacity: 0}, {display: "block", opacity: 1})
@@ -45,12 +45,12 @@ const Scene3 = () => {
     tl.to("#product-display", 0.5, {opacity: 0})
 
     // Lock turn
-    tl.to("#scene-3", {attr:{viewBox: "495 302 70 32"}, duration: 1}, "-=.5")
+    tl.to("#scene-3", {attr:{viewBox: "495 295 70 45"}, duration: 1}, "-=.5")
     tl.to("#lock-turn", 2,{rotate: 90, ease: "none", transformOrigin: "50% 50%"})
     tl.to("#lock-light", {fill:"#7FFF00", repeat: 3})
 
-    // // Zoom out
-    tl.to("#scene-3", {attr:{viewBox: "0 0 838 596"}, delay: 1, duration: 1})
+    // Zoom out
+    tl.to("#scene-3", 2, {attr:{viewBox: "0 0 838 596"}, delay: 1})
     
     // // Door opens -> person enters
     tl.to("#door-3, #lock, #door-handle", {display: "none"})
@@ -89,7 +89,7 @@ const Scene3 = () => {
       fill="none"
       viewBox="0 0 838 596"
     >
-      <g id="scene-3-int-door" clip-path="url(#clip0)">
+      <g id="scene-3-int-door" clipPath="url(#clip0)">
         <path fill="#fff" d="M0 0h838v596H0z"></path>
         <g id="inside-door">
           <g id="outside-bg">

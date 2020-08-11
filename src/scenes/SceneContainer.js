@@ -16,7 +16,7 @@ const SceneContainer = () => {
     return (
         <div className='container'>
                 {/* {sceneArr[scene]} */}
-                <Scene3/>
+                <Scene2/>
         </div>
     )
 }

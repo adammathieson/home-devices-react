@@ -8,6 +8,7 @@ import {useStore} from '../Store'
 const Scene1 = () => {
 
     const next = useStore(state => state.nextScene)
+
     useEffect(() => {
         const rLeg = gsap.fromTo("#leg-right" , .45, {rotate: 5}, {rotate: -5, ease:'none', repeat:-1, yoyo: true});
         rLeg.progress(0.5).pause();
@@ -17,7 +18,7 @@ const Scene1 = () => {
         lLeg.progress(0.5).pause();
         lLeg.play();
         
-        const rLegBack = gsap.fromTo("#leg-right-back", .45, {rotate: -5, y: 2}, {rotate: 5, y: -2, ease:'none', repeat:-1, yoyo: true});
+        const rLegBack = gsap.fromTo("#leg-right-back, #leg-left-back", .45, {rotate: -5}, {rotate: 5, ease:'none', repeat:-1, yoyo: true});
         rLegBack.progress(0.5).pause();
         rLegBack.play();
         

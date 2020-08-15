@@ -26,8 +26,8 @@ const Scene2 = () => {
             // zoom in on product
             tl.to("#scene-2", 1.5, {attr:{viewBox: "484 157 80 40"}}, "+=1")
             tl.fromTo("#product-display", .32, {display: "block", opacity: 0}, {opacity: 1})
-            tl.fromTo("#product-title", 0.4,{display: "none", y: -2}, {display: "block", y: 0})
-            tl.fromTo("#product-info", 0.4, {display: "none", x: 2}, {display: "block", x: 0})
+            tl.fromTo("#product-title", 0.4,{display: "none", x: -3}, {display: "block", x: 0})
+            tl.fromTo("#product-info", 0.4, {display: "none", x: 3}, {display: "block", x: 0})
             tl.fromTo("#product-price", 1.2, {display: "none", opacity: 0}, {display: "block", opacity: 1, delay: 0.2})
             tl.to("#product-card", 0.4, {opacity: 0, delay:2})
             tl.to("#product-display", 0.5, {opacity: 0})
@@ -40,7 +40,7 @@ const Scene2 = () => {
             tl.to("#arm-int-right", 0.5,{x: 30})
 
             // // Filling out application
-            tl.to("#cursor", {x:-50, y:-13, duration: 1.5})
+            tl.to("#cursor", 1, {x:-50, y:-13})
             tl.to("#loader", {display: "block"})
             tl.to("#analyzing-resume", {display: "block"})
             tl.to("#loader", {rotate: 360, transformOrigin: "50% 50%", repeat: -1, duration: 1, ease: "none"}, "-=1")
@@ -55,8 +55,8 @@ const Scene2 = () => {
             tl.to("#phone", {display: "block"}, "-=0.5")
             
             // Alert msg
-            tl.to("#guy-back, #wyze-logo", {display: "block"})
-            tl.to("#msg-box", {stroke: "none"})
+            tl.set("#guy-back, #wyze-logo", {display: "block"})
+            tl.set("#msg-box", {stroke: "none"})
             tl.to("#alert-msg", {display: "block"})
             tl.fromTo("#alert-msg", {opacity: 0, x: 5}, {opacity: 1, x:0})
             tl.to("#cursor", {x: 5, y: -43, duration: 1, delay: 1})
@@ -65,7 +65,7 @@ const Scene2 = () => {
             // Cam feed
             tl.to("#cam-feed", {display: "block"})
             tl.to("#alert-msg", {opacity: 0, x: 5, delay: .05})
-            tl.fromTo("#cursor", {x: 5, y: -43}, {x: -2, y: -15, duration: .6, delay: 1})
+            tl.fromTo("#cursor", 0.6, {x: 5, y: -43}, {x: -2, y: -15, delay: .5})
             tl.to("#locked", {display: "none"})
             tl.to("#Locked", {display: "none"})
             tl.to("#Unlocked", {display: "block"})

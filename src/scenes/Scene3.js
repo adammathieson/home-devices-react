@@ -73,17 +73,17 @@ const Scene3 = () => {
     tl.to("#package-3", {x: -80})
     tl.to("#package-table", {display: "block"})
 
-    // // Person leaves, closes door
-    // tl.to("#guy-front3",0,  {display: "none"}, "-=.3")
-    // tl.to("#guy-back3",0, {display: "block"}, "-=.3")
-    // tl.to("#guy-back3", {x:300, y:-30, duration: 2.5, onComplete: stopStepBack}, "-=.4")
-    // tl.to("#arm-back-face-right", {rotate: -30}, "-=0.5")
-    // tl.to("#guy3", {display: "none"})
-    // tl.to("#door-open-3", {display: "none"}, "-=0.5")
-    // tl.to("#door-3, #lock, #door-handle", {display: "block"})
-    // tl.to("#guy-front-static", {display: "block", x:-30, duration: 0}, "-=.5")
-    // tl.to("#guy-front-static", { x: -50, y: 100, scale: 0.8, duration: 2.2})
-    // tl.to("#scene-3", 1, {opacity: 0, onComplete: null})
+    // Person leaves, closes door
+    tl.to("#guy-front3",0,  {display: "none"}, "-=.3")
+    tl.to("#guy-back3",0, {display: "block"}, "-=.3")
+    tl.to("#guy-back3", {x:300, y:-30, duration: 2.5, onComplete: stopStepBack}, "-=.4")
+    tl.to("#arm-back-face-right", {rotate: -30}, "-=0.5")
+    tl.to("#guy3", {display: "none"})
+    tl.to("#door-open-3", {display: "none"}, "-=0.5")
+    tl.to("#door-3, #lock, #door-handle", {display: "block"})
+    tl.to("#guy-front-static", {display: "block", x:-30, duration: 0}, "-=.5")
+    tl.to("#guy-front-static", { x: -50, y: 100, scale: 0.8, duration: 2.2})
+    tl.to("#scene-3", 1, {opacity: 0, onComplete: next})
 
     }, [next])
 

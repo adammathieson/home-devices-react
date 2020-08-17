@@ -39,51 +39,53 @@ const Scene3 = () => {
         }
 
         const tl = gsap.timeline()
-    tl.to("#scene-3", 2, {opacity: 1})  
 
-    // zoom in on product
-    // tl.to("#scene-3", 2, {attr:{viewBox: "505 295 70 45"}, ease: "power2.out"})
+          tl.to("#scene-3", 2, {opacity: 1})  
 
-    // tl.fromTo("#product-display", .32, {display: "none", opacity: 0}, {display: "block", opacity: 1})
-    // tl.fromTo("#product-title", .8, {display:"none", opacity: 0, x: 3}, {display: "block", opacity: 1, x: 0})
-    // tl.fromTo("#product-info", .8, {display:"none", opacity: 0, x: -3}, {display: "block", opacity: 1, x: 0}, "-=0.5")
-    // tl.fromTo("#product-price", 1.6, {display:"none", opacity: 0}, {display: "block", opacity: 1})
-    // tl.to("#product-card", 0.4, {opacity: 0, delay:2})
-    // tl.to("#product-display", 0.5, {opacity: 0})
+          // zoom in on product
+          tl.to("#scene-3", 2, {attr:{viewBox: "505 295 70 45"}, ease: "power2.out"})
 
-    // // Lock turn
-    // tl.to("#scene-3", 1, {attr:{viewBox: "495 295 70 45"}}, "-=.5")
-    // tl.to("#lock-turn", 2,{rotate: 90, ease: "none", transformOrigin: "50% 50%"})
-    // tl.to("#lock-light", {fill:"#7FFF00", repeat: 3})
+          tl.fromTo("#product-display", .32, {display: "none", opacity: 0}, {display: "block", opacity: 1})
+          tl.fromTo("#product-title", .8, {display:"none", opacity: 0, x: 3}, {display: "block", opacity: 1, x: 0})
+          tl.fromTo("#product-info", .8, {display:"none", opacity: 0, x: -3}, {display: "block", opacity: 1, x: 0}, "-=0.5")
+          tl.fromTo("#product-price", 1.6, {display:"none", opacity: 0}, {display: "block", opacity: 1})
+          tl.to("#product-card", 0.4, {opacity: 0, delay:2})
+          tl.to("#product-display", 0.5, {opacity: 0})
 
-    // Zoom out
-    tl.to("#scene-3", 1.5, {attr:{viewBox: "0 0 838 596"}, delay: 1, ease: "power2.in"})
-    
-    // Door opens -> person enters
-    tl.to("#lock, #door-handle", 0,{display: "none"})
-    tl.to("#door-3", {scaleX: 0, transformOrigin: "100% 0%"})
-    tl.fromTo("#door-open-3", {display: "none", scaleX: 0}, {display: "block", scaleX: 1}, "-=0.15")
-    tl.to("#guy-front-static", 0,{display: "none"})
-    tl.to("#guy3", 0,{display: "block"})
-    tl.to("#guy3", {x: -320, y: 30, duration: 2.5, onComplete: stopStep, ease: "walk-start"}, "-=.1")
-    
-    // // Person slides package
-    tl.to("#arm-front-face-right-3", {rotate: 5, duration: 0.05, transformOrigin: "100% 0%"})
-    tl.to("#arm-front-face-left-3", {rotate: 5, duration: 0.05, transformOrigin: "100% 0%"}, "-=0.05")
-    tl.to("#package-3", {x: -80})
-    tl.to("#package-table", {display: "block"})
+          // Lock turn
+          tl.to("#scene-3", 1, {attr:{viewBox: "495 295 70 45"}}, "-=.5")
+          tl.to("#lock-turn", 2,{rotate: 90, ease: "none", transformOrigin: "50% 50%"})
+          tl.to("#lock-light", {fill:"#7FFF00", repeat: 3})
 
-    // Person leaves, closes door
-    tl.to("#guy-front3",0,  {display: "none"}, "-=.3")
-    tl.to("#guy-back3",0, {display: "block"}, "-=.3")
-    tl.to("#guy-back3", {x:300, y:-30, duration: 2.5, onComplete: stopStepBack}, "-=.4")
-    tl.to("#arm-back-face-right", {rotate: -30}, "-=0.5")
-    tl.to("#guy3", {display: "none"})
-    tl.to("#door-open-3", {display: "none"}, "-=0.5")
-    tl.to("#door-3, #lock, #door-handle", {display: "block"})
-    tl.to("#guy-front-static", {display: "block", x:-30, duration: 0}, "-=.5")
-    tl.to("#guy-front-static", { x: -50, y: 100, scale: 0.8, duration: 2.2})
-    tl.to("#scene-3", 1, {opacity: 0, onComplete: next})
+          // Zoom out
+          tl.to("#scene-3", 1.5, {attr:{viewBox: "0 0 838 596"}, delay: 1, ease: "power2.in"})
+          
+          // Door opens -> person enters
+          tl.to("#lock, #door-handle", 0,{display: "none"})
+          tl.to("#door-3", {scaleX: 0, transformOrigin: "100% 0%"})
+          tl.fromTo("#door-open-3", {display: "none", scaleX: 0}, {display: "block", scaleX: 1}, "-=0.15")
+          tl.to("#guy-front-static", 0,{display: "none"})
+          tl.to("#guy3", 0,{display: "block"})
+          tl.to("#guy3", {x: -320, y: 30, duration: 2.5, onComplete: stopStep, ease: "walk-start"}, "-=.01")
+          
+          // // Person slides package
+          tl.to("#arm-front-face-right-3", {rotate: 5, duration: 0.05, transformOrigin: "100% 0%"})
+          tl.to("#arm-front-face-left-3", {rotate: 5, duration: 0.05, transformOrigin: "100% 0%"}, "-=0.05")
+          tl.to("#package-3", {x: -80})
+          tl.to("#package-table", {display: "block"})
+
+          // Person leaves, closes door
+          tl.to("#guy-front3",0,  {display: "none"}, "-=0.3")
+          tl.to("#guy-back3",0, {display: "block"}, "-=0.3")
+          tl.to("#guy-back3", 2.5, {x:300, y:-30, onComplete: stopStepBack}, "-=0.4")
+          tl.to("#arm-back-face-right", {rotate: -30}, "-=0.5")
+          tl.to("#door-open-3", {display: "none"}, "-=0.5")
+          tl.to("#door-3", {scaleX: 1})
+          tl.to("#guy3", {display: "none"}, "-=1")
+          tl.to("#door-3, #lock, #door-handle", {display: "block"}, "-=0.5")
+          tl.to("#guy-front-static", 0, {display: "block", x:-30}, "-=0.5")
+          tl.to("#guy-front-static", 2.2, { x: -50, y: 100, scale: 0.8})
+          tl.to("#scene-3", 1, {opacity: 0, onComplete: next})
 
     }, [next])
 

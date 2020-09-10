@@ -1,49 +1,70 @@
 
-<h2 align="center" >Scene Script </h2>
+<h2 align="center" >Scene Script - Home Devices </h2>
 
+Description: a product placement website showcasing IOT (internet of things) connected home devices. The site uses SVG animations to highlight helpful use case scenarios for products, and give people in the market of such devices ideas of how they can help to enhance their lives.
 
-Scene 1
+<br>
 
-Setting:  A neighborhood in a suburb — houses in the background
+---
+**Scene 1**
 
-A delivery person walks along a path carrying a medium sized box with both hands to the front porch of a large blue house and stops at the front steps.
+Setting —  _A neighborhood in a suburb — houses in the background_
 
-Up above the front door is a mounted camera.
+A delivery person walks along a path carrying a medium sized box with both hands to the front porch of a large blue house and stops at the front steps. Above the front door is a mounted camera.
 
-[ The view zooms in on a small, white,  wall-mounted camera — product information appears next to the camera that reads: ]
+[ View zooms in ]
+
+_A small, white,  wall-mounted camera — product information appears next to the camera that reads:_
 	
-Wyze Cam V2
-• 1080p Full HD, 8x Digital Zoom
-• Night Vision, 2-way Audio
-	[ $19.99 ] nineteen-ninety-nine 
+>Wyze Cam V2
+>- 1080p Full HD, 8x Digital Zoom
+>- Night Vision, 2-way Audio
+>- Nineteen ninety-nine ($19.99)
 
+[ View pans down ] 
 
-[ The view pans down to an equally sleek looking 10-digit keypad just beside the front door handle, product information appears as:   ]
+_An equally sleek looking 10-digit keypad mounted just beside the front door handle, product information appears as:_
 
-Wyze Lock Keypad
-Wire Free, One-touch Lock
-Time-based Guest Codes
-	[ $19.99 ] nineteen ninety-nine 
+>Wyze Lock Keypad
+>- Wire Free, One-touch Lock
+>- Time-based Guest Codes
+>- Nineteen ninety-nine ($19.99)
 
-[ The view zooms back out to show the delivery person and porch and then fades to black ]
+[ View zooms out ] 
 
-Scene 2
-Setting: interior of a small home office
+_The delivery person stands on the porch
+
+[ Fade to black ]
+
+<br>
+
+---
+**Scene 2**
+
+Setting — _interior of a small home office_
 
 A person sits typing at their computer
 
-[ The view zooms in on another small camera, though different from the one on the front porch, it’s clearly made by the same company. Text displays reading: ] 
+[ View zooms in ]  
 
-Wyze Cam Pan
-360° coverage in less than 3 seconds
-1080p Full HD
-	[ $29.99 ] twenty-nine ninety-nine
+_Another small camera, though different from the one on the front porch, it’s clearly made by the same company. Text displays reading:_ 
 
-[ View zooms out and pans down to person on their computer — zooms in tight to the monitor. ]
+>Wyze Cam Pan
+>- 360° coverage in less than 3 seconds
+>- 1080p Full HD
+>- twenty-nine ninety-nine ($29.99)
+
+[ View zooms out halfway and pans down ] 
+
+_The person working on their computer_ 
+
+[ Zooms in tight to the monitor ]
 
 A job application form is filled out — when the resume attachment uploads the form auto-fills with the information of the applicant.
 
-A small rectangular and bright green alert box slides in from the top right corner of the monito that reads “Motion alert at front door cam…”. 
+A small rectangular and bright green alert box slides in from the top right corner of the monitor that reads: 
+
+“Motion alert at front door cam…”.
 
 The mouse cursor moves over the alert message and clicks causing the thicker outer border of the box to appear in an even brighter shade of green before dissolving away.
 
@@ -53,19 +74,25 @@ The mouse cursor moves over a lock icon on right side menu of the interface and 
 
 [ Fade out to black ]
 
-Scene 3
-Setting: Interior of the front entry way of the house
+<br>
 
-[ View zooms in on the backside of the front door to a sleek light grey lock. Text displays reading: ]
+---
+**Scene 3**
 
-Wyze Lock
-Remote Access
-Auto lock/unlock
-	[ $99.99 ] ninety-nine ninety-nine
+Setting — _Interior of the front entry way of the house_
+
+[ View zooms in ]
+
+_on the backside of the front door there is a sleek light grey lock. Text displays reading:_
+
+>Wyze Lock
+>- Remote Access
+>- Auto lock/unlock
+>- ninety-nine ninety-nine ($99.99)
 
 The turn knob (dial) on the lock moves from a flat horizontal position to straight up while small green light slowly blinks.
 
-[ View zooms back out ]
+[ View zooms out ]
 
 The front door swings open and delivery person enters carrying box towards a thin table just inside the entry way.
 
@@ -73,26 +100,38 @@ Without stopping the delivery person slides the package onto the table and then 
 
 [ Fade out to black ]
 
-Scene 4 
-Setting: interior of a small home office
+<br>
+
+---
+**Scene 4**
+
+Setting — _interior of a small home office_
 
 The person sitting at the computer closes the camera feed application window, spins in their chair, and slides backwards off the screen with their arms raised, and their legs flailing with excitement. 
 
 [ Fade out to black ]
 
-Scene 5
-Setting: Interior of the front entry way of the house
+<br>
+
+---
+**Scene 5**
+
+Setting — _Interior of the front entry way of the house_
 
 The person slides in on the office chair and when they are in line with the table and package (in one motion) they stand up out of the chair (the chair continues to slide out of screens viewport) and lift the contents from the now open top flap of the box and into to air showing — in each hand respectfully — a slightly beefier camera and accompanying base antenna unit. 
 
-[ View zooms into the camera and base. Text displays reading: ]
+[ View zooms in ]
 
-Wyze Cam Outdoor
-Wireless livestream & recording
-6 month battery charge
-	[ $49.99 ] forty-nine ninety-nine
+_The camera and base fill the screen. Text displays reading:_
 
-[ View zooms out to the person leap sinto the air with outstretched arms still holding the new camera unit ]
+> Wyze Cam Outdoor
+>- Wireless livestream & recording
+>- 6 month battery charge
+>- forty-nine ninety-nine ($49.99)
+
+[ View zooms out ] 
+
+_The person leaps into the air with outstretched arms still holding the new camera unit_
 
 At the apex of leap the image freeze-frames and in large white title lettering the word “WYZE” (and logo of the company) displays across the entire screen.
 

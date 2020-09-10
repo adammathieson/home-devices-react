@@ -6,6 +6,8 @@
 
 Description: A product placement website showcasing IOT (internet of things) connected home devices. The site uses SVG animations to highlight helpful use case scenarios for products, and give people in the market of such devices ideas of how they can help to enhance their lives.
 
+[go to the app on heroku](https://home-devices.herokuapp.com/)
+
 <br>
 
 <h3>Scene Scripts</h3>

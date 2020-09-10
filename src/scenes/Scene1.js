@@ -66,7 +66,13 @@ const Scene1 = () => {
     }, [next])
 
     return (
-      <svg id="scene-1" width="839" height="596" viewBox="0 0 839 596" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg 
+            id="scene-1" 
+            width="839" 
+            height="596" 
+            viewBox="0 0 839 596" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
     <g id="scene-1-exterior" clipPath="url(#clip0)">
         <path fill="url(#paint0_linear)" d="M0 0h839v596H0z" />
         <g id="scene-container">

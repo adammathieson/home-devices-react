@@ -81,8 +81,14 @@ const Scene2 = () => {
             viewBox="0 0 839 596" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
+            title="Office"
+            role="img"
+            alt="A person working on their computer gets an alert about someone at the front door"
         >
             <g id="scene-2-interior">
+                <desc>
+                    A person sits typing at their computer. The view zooms in on another small camera, though different from the one on the front porch, it’s clearly made by the same company. Text displays reading “Wyze Cam Pan, 360° coverage in less than 3 seconds, 1080p Full HD, $29.99”. View zooms out and pans down to a person on their computer — zooms in tight to the monitor. A job application form is filled out — when the resume attachment uploads the form auto-fills with the information of the applicant. A small rectangular and bright green alert box slides in from the top right corner of the monitor that reads “Motion alert at front door cam…”. The mouse cursor moves over the alert message and clicks causing the thicker outer border of the box to appear in an even brighter shade of green before dissolving away. An application window opens showing the feed from the front door camera. The mouse cursor moves over a lock icon on the right side menu of the interface and as it clicks, the word “Locked” — just above the icon — turns to “Unlocked”. Fade out to black.
+                </desc>
                 <path id="wall" d="M0 0h838v596H0V0z" fill="#ECDFCB" />
                 <g id="window-trim">
                     <path id="Rectangle 591" fill="#fff" d="M98 68h297v312H98z" />

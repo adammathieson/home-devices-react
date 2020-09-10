@@ -28,8 +28,14 @@ const Scene4 = () => {
             height="596"
             fill="none"
             viewBox="0 0 839 596"
+            title="Chair sliding"
+            role="img"
+            alt="The person working at their desk slides out of the room on their chair"
             >
             <g id="scene-4-chair-slide">
+                <desc>
+                    The person sitting at the computer closes the camera feed application window, spins in their chair, and slides backwards off the screen with their arms raised, and their legs flailing with excitement. Fade out to black.
+                </desc>
                 <path id="wall" fill="#ECDFCB" d="M0 0h838v596H0V0z"></path>
                 <g id="window-trim">
                 <path id="Rectangle 591" fill="#fff" d="M98 68h297v312H98z"></path>

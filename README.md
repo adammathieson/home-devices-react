@@ -1,3 +1,163 @@
+
+<h2 align="center" >Home Devices </h2>
+<h3 align="center" >A product showcase app </h3>
+
+<br>
+
+Description: A product placement website showcasing IOT (internet of things) connected home devices. The site uses SVG animations to highlight helpful use case scenarios for products, and give people in the market of such devices ideas of how they can help to enhance their lives.
+
+[go to the app on heroku](https://home-devices.herokuapp.com/)
+
+<br>
+
+<h3>Scene Scripts</h3>
+
+---
+**Scene 1**
+
+Setting —  _A neighborhood in a suburb — houses in the background_
+
+A delivery person walks along a path carrying a medium sized box with both hands to the front porch of a large blue house and stops at the front steps. Above the front door is a mounted camera.
+
+<div align="center">[ View zooms in ]</div>
+<br>
+
+_A small, white,  wall-mounted camera — product information appears next to the camera that reads:_
+	
+>Wyze Cam V2
+>- 1080p Full HD, 8x Digital Zoom
+>- Night Vision, 2-way Audio
+>- Nineteen ninety-nine ($19.99)
+
+<div align="center">[ View pans down ]</div>
+<br>
+
+_An equally sleek looking 10-digit keypad mounted just beside the front door handle, product information appears as:_
+
+>Wyze Lock Keypad
+>- Wire Free, One-touch Lock
+>- Time-based Guest Codes
+>- Nineteen ninety-nine ($19.99)
+
+<div align="center">[ View zooms out ]</div>
+<br>
+
+_The delivery person stands on the porch_
+
+<div align="center">[ Fade to black ]</div>
+<br>
+
+
+---
+**Scene 2**
+
+Setting — _Interior of a small home office_
+
+A person sits typing at their computer
+
+<div align="center">[ View zooms in ]</div>
+<br>  
+
+_Another small camera, though different from the one on the front porch, it’s clearly made by the same company. Text displays reading:_ 
+
+>Wyze Cam Pan
+>- 360° coverage in less than 3 seconds
+>- 1080p Full HD
+>- Twenty-nine ninety-nine ($29.99)
+
+<div align="center">[ View zooms out halfway and pans down ]</div>
+<br> 
+
+_The person working on their computer_ 
+
+<div align="center">[ Zooms in tight to the monitor ]</div>
+<br>
+
+A job application form is filled out — when the resume attachment uploads the form auto-fills with the information of the applicant.
+
+A small rectangular and bright green alert box slides in from the top right corner of the monitor that reads: 
+
+“Motion alert at front door cam…”.
+
+The mouse cursor moves over the alert message and clicks causing the thicker outer border of the box to appear in an even brighter shade of green before dissolving away.
+
+An application window opens showing the feed from the front door camera.
+
+The mouse cursor moves over a lock icon on right side menu of the interface and as it clicks, the word “Locked” — just above the icon — turns to “Unlocked”.
+
+<div align="center">[ Fade out to black ]</div>
+<br>
+
+---
+**Scene 3**
+
+Setting — _Interior of the front entry way of the house_
+
+<div align="center">[ View zooms in ]</div>
+<br>
+
+_on the backside of the front door there is a sleek light grey lock. Text displays reading:_
+
+>Wyze Lock
+>- Remote Access
+>- Auto lock/unlock
+>- Ninety-nine ninety-nine ($99.99)
+
+The turn knob (dial) on the lock moves from a flat horizontal position to straight up while small green light slowly blinks.
+
+<div align="center">[ View zooms out ]</div>
+<br>
+
+The front door swings open and delivery person enters carrying box towards a thin table just inside the entry way.
+
+Without stopping the delivery person slides the package onto the table and then turns to walk out and closes the door behind them.
+
+<div align="center">[ Fade out to black ]</div>
+<br>
+
+---
+**Scene 4**
+
+Setting — _Interior of a small home office_
+
+The person sitting at the computer closes the camera feed application window, spins in their chair, and slides backwards off the screen with their arms raised, and their legs flailing with excitement. 
+
+<div align="center">[ Fade out to black ]</div>
+<br>
+
+---
+**Scene 5**
+
+Setting — _Interior of the front entry way of the house_
+
+The person slides in on the office chair and when they are in line with the table and package (in one motion) they stand up out of the chair (the chair continues to slide out of screens viewport) and lift the contents from the now open top flap of the box and into to air showing — in each hand respectfully — a slightly beefier camera and accompanying base antenna unit. 
+
+<div align="center">[ View zooms in ]</div>
+<br>
+
+_The camera and base fill the screen. Text displays reading:_
+
+> Wyze Cam Outdoor
+>- Wireless livestream & recording
+>- 6 month battery charge
+>- Forty-nine ninety-nine ($49.99)
+
+<div align="center">[ View zooms out ]</div>
+<br>
+
+_The person leaps into the air with outstretched arms still holding the new camera unit_
+
+At the apex of leap the image freeze-frames and in large white title lettering the word “WYZE” (and logo of the company) displays across the entire screen.
+
+A button with words “Play Again” pops up at the bottom of the page.
+
+<br>
+
+--- 
+---
+
+<br>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Available Scripts
 

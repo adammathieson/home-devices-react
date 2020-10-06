@@ -21,26 +21,26 @@ const Scene2 = () => {
 
         const tl = gsap.timeline()
             tl.set("#chair-front", {display: "block"})
-            tl.to("#scene-2", 1, {opacity: 1})
+            tl.to("#scene-2", {duration: 1, opacity: 1})
 
             // zoom in on product
-            tl.to("#scene-2", 1.5, {attr:{viewBox: "484 157 80 40"}}, "+=1")
-            tl.fromTo("#product-display", .32, {display: "block", opacity: 0}, {opacity: 1})
-            tl.fromTo("#product-title", 0.4,{display: "none", x: -3}, {display: "block", x: 0})
-            tl.fromTo("#product-info", 0.4, {display: "none", x: 3}, {display: "block", x: 0})
-            tl.fromTo("#product-price", 1.2, {display: "none", opacity: 0}, {display: "block", opacity: 1, delay: 0.2})
-            tl.to("#product-card", 0.4, {opacity: 0, delay:2})
-            tl.to("#product-display", 0.5, {opacity: 0})
+            tl.to("#scene-2", {duration: 1.5, attr:{viewBox: "484 157 80 40"}}, "+=1")
+            tl.fromTo("#product-display", {display: "block", opacity: 0}, {opacity: 1})
+            tl.fromTo("#product-title", {duration: 0.4, display: "none", x: -3}, {duration: 0.4, display: "block", x: 0})
+            tl.fromTo("#product-info", {duration: 0.4, display: "none", x: 3}, {duration: 0.4, display: "block", x: 0})
+            tl.fromTo("#product-price", {duration: 1.2, display: "none", opacity: 0}, {duration: 1.2, display: "block", opacity: 1, delay: 0.2})
+            tl.to("#product-card", {duration: 0.4, opacity: 0, delay:2})
+            tl.to("#product-display", {duration: 0.5, opacity: 0})
 
             // // Zoom out
-            tl.to("#scene-2", 2, {attr:{viewBox: "200 200 400 300"}})
+            tl.to("#scene-2", {duration: 2, attr:{viewBox: "200 200 400 300"}})
 
             // Zoom in on monitor
             tl.to("#scene-2", {attr:{viewBox: "260 285 125 80"}, duration: 2, onComplete: stopTyping})
-            tl.to("#arm-int-right", 0.5,{x: 30})
+            tl.to("#arm-int-right", {duration: 0.5, x: 30})
 
             // // Filling out application
-            tl.to("#cursor", 1, {x:-50, y:-13})
+            tl.to("#cursor", {duration: 1, x:-50, y:-13})
             tl.to("#loader", {display: "block"})
             tl.to("#analyzing-resume", {display: "block"})
             tl.to("#loader", {rotate: 360, transformOrigin: "50% 50%", repeat: -1, duration: 1, ease: "none"}, "-=1")
@@ -65,11 +65,11 @@ const Scene2 = () => {
             // Cam feed
             tl.to("#cam-feed", {display: "block"})
             tl.to("#alert-msg", {opacity: 0, x: 5, delay: .05})
-            tl.fromTo("#cursor", 0.6, {x: 5, y: -43}, {x: -2, y: -15, delay: .5})
+            tl.fromTo("#cursor", {duration: 0.6, x: 5, y: -43}, {duration: 0.6, x: -2, y: -15, delay: .5})
             tl.to("#locked", {display: "none"})
             tl.to("#Locked", {display: "none"})
             tl.to("#Unlocked", {display: "block"})
-            tl.to("#scene-2", .5, {opacity: 0, onComplete: next})
+            tl.to("#scene-2", {duration: 0.5, opacity: 0, onComplete: next})
 
     }, [next])
 

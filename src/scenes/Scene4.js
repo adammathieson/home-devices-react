@@ -7,17 +7,17 @@ const Scene4 = () => {
     useEffect(() => {
         const tl = gsap.timeline()
             tl.set("#guy4, #chair-front", {display: "block"})
-            tl.to("#scene-4", 1, {opacity: 1})
-            tl.to("#arm-int-right", 0.15, {y:-5, repeat: 2, delay: 1})
-            tl.to("#window-job-app", 0, {display: "none"})
-            tl.to("#guy4", 0, {scaleX: -1, transformOrigin: "75% 50%", delay: .5})
-            tl.to("#chair-front", 0, {scaleX: -1, transformOrigin: "50% 50%"})
-            tl.to("#arm-int-right", .2, {rotate: 90, transformOrigin: "100% 0%"})
-            tl.to("#arm-int-left", .2, {rotate: 70, transformOrigin: "100% 0%"}, "-=.2")
-            tl.to("#leg-left-3", .2, {rotate: 20, transformOrigin: "100% 0%"}, "-=.2")
-            tl.to("#body-int-upper", .2, {rotate: 15, transformOrigin: "50% 100%"}, "-=.2")
-            tl.to("#guy4, #chair-front", 3, {x: -1000}, "-=.15")
-            tl.to("#scene-4", .5, {opacity: 0, onComplete: next}, "-=2" )
+            tl.to("#scene-4", {duration: 1, opacity: 1})
+            tl.to("#arm-int-right", {duration: 0.15, y:-5, repeat: 2, delay: 1})
+            tl.to("#window-job-app", {duration: 0, display: "none"})
+            tl.to("#guy4", {duration: 0, scaleX: -1, transformOrigin: "75% 50%", delay: .5})
+            tl.to("#chair-front", {duration: 0, scaleX: -1, transformOrigin: "50% 50%"})
+            tl.to("#arm-int-right", {duration: 0.2, rotate: 90, transformOrigin: "100% 0%"})
+            tl.to("#arm-int-left", {duration: 0.2, rotate: 70, transformOrigin: "100% 0%"}, "-=.2")
+            tl.to("#leg-left-3", {duration: 0.2, rotate: 20, transformOrigin: "100% 0%"}, "-=.2")
+            tl.to("#body-int-upper", {duration: 0.2, rotate: 15, transformOrigin: "50% 100%"}, "-=.2")
+            tl.fromTo("#guy4, #chair-front", {duration: 3, x: 0}, {duration: 3, x: -1000},"-=.15")
+            tl.to("#scene-4", {duration: 0.5, opacity: 0, onComplete: next}, "-=2" )
     }, [next])
 
     return (
@@ -32,7 +32,7 @@ const Scene4 = () => {
             role="img"
             alt="The person working at their desk slides out of the room on their chair"
             >
-            <g id="scene-4-chair-slide">
+            <g id="scene-4-chair-slide" overflow='hidden'>
                 <desc>
                     The person sitting at the computer closes the camera feed application window, spins in their chair, and slides backwards off the screen with their arms raised, and their legs flailing with excitement. Fade out to black.
                 </desc>

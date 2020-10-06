@@ -32,37 +32,37 @@ const Scene1 = () => {
         }
 
         const tl = gsap.timeline()
-            tl.to("#scene-1", 1, {opacity: 1})
+            tl.to("#scene-1", {duration: 1, opacity: 1})
 
             // Walk up to porch 
-            tl.fromTo("#guy", 3, {x: -200}, {x: 290, ease: 'none'})
+            tl.fromTo("#guy", {duration: 3, x: -200}, {duration: 3, x: 290, ease: 'none'})
             tl.to("#guy-side", {display: "none", duration: 0})
             tl.to("#guy-back", {display: "block", duration: 0})
             //Zoom to porch
-            tl.to("#scene-1", 3,{attr:{viewBox: "250 250 400 200"}})
-            tl.to("#guy", 3, {scale:0.38 , y: -3, onComplete: stopWalking}, "-=3")
+            tl.to("#scene-1", {duration: 3, attr:{viewBox: "250 250 400 200"}})
+            tl.to("#guy", {duration: 3, scale:0.38 , y: -3, onComplete: stopWalking}, "-=3")
 
             // zoom in product 2
-            tl.to("#scene-1", 2, {attr:{viewBox: "470 310 20 15"}})
-            tl.fromTo("#product-display-2", .32, {display: "block", opacity: 0}, {opacity: 1})
-            tl.to("#product-title-2", 0.5, {display: "block", scale: .8, x: 4})
-            tl.to("#product-info-2", 0.5, {display: "block", scale: .7, x: 4})
-            tl.to("#product-price-2", 0.5, {display: "block", scale: .7, x: 4})
-            tl.to("#product-card-2", 0.4, {opacity: 0, delay: 2})
-            tl.to("#product-display-2", 0.5, {opacity: 0})
+            tl.to("#scene-1", {duration: 2, attr:{viewBox: "470 310 20 15"}})
+            tl.fromTo("#product-display-2", {display: "block", opacity: 0}, {opacity: 1})
+            tl.to("#product-title-2", {duration: 0.5 ,display: "block", scale: .8, x: 4})
+            tl.to("#product-info-2", {duration: 0.5, display: "block", scale: .7, x: 4})
+            tl.to("#product-price-2", {duration: 0.5, display: "block", scale: .7, x: 4})
+            tl.to("#product-card-2", {duration: 0.5, opacity: 0, delay: 2})
+            tl.to("#product-display-2", {duration: 0.5, opacity: 0})
             
             // zoom in on product 1
             tl.to("#scene-1", 1.5, {attr:{viewBox: "460 353 20 15", delay: 1}})
-            tl.fromTo("#product-display", .32, {display: "block", opacity: 0}, {opacity: 1})
-            tl.to("#product-title", 0.5, {display: "block", scale: .8, x: 3})
-            tl.to("#product-info", 0.5, {display: "block", scale: .7, x: 3})
-            tl.to("#product-price", 0.5, {display: "block", scale: .7, x: 3})
-            tl.to("#product-card", 0.4, {opacity: 0, delay:2})
-            tl.to("#product-display", 0.5, {opacity: 0})
+            tl.fromTo("#product-display", {display: "block", opacity: 0}, {opacity: 1})
+            tl.to("#product-title", {duration: 0.5, display: "block", scale: .8, x: 3})
+            tl.to("#product-info", {duration: 0.5, display: "block", scale: .7, x: 3})
+            tl.to("#product-price", {duration: 0.5, display: "block", scale: .7, x: 3})
+            tl.to("#product-card", {duration: 0.4, opacity: 0, delay:2})
+            tl.to("#product-display", {duration: 0.5, opacity: 0})
 
             // zoom out and fade
-            tl.to("#scene-1", 3, {attr:{viewBox: "250 250 400 200"}})
-            tl.to("#scene-1", 0.4, {opacity: 0, onComplete: next})
+            tl.to("#scene-1", {duration: 3, attr:{viewBox: "250 250 400 200"}})
+            tl.to("#scene-1", {duration: 0.4, opacity: 0, onComplete: next})
     }, [next])
 
     return (
